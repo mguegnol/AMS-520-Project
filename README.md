@@ -1,5 +1,5 @@
 # AMS-520-Project
-## Combining (deep) reinforcement learning and goals based investing in QWIM - FinRL
+Combining (deep) reinforcement learning and goals based investing in QWIM - FinRL
 
 # Reinforcement Learning algorithms
 Reinforcement learning is a machine learning training strategy that rewards desirable actions while penalizing undesirable ones. A reinforcement learning agent can sense and comprehend its surroundings, act, and learn via trial and error in general.
