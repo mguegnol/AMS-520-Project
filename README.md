@@ -30,8 +30,9 @@ The technical indicators that is used in this project are MACD, BOLL, RSI, CCI, 
 - CCI = (TP - SMA(TP,20)) / (.015 x Mean Deviation(TP,20))
 - ADX = |+DI- -DI|/|+DI + -DI| *100
 
-# Data source
-The data souce is from yfinance, which is based on data from yahoo finance.
+# Data Description
+The data souce is from yfinance, which is based on data from yahoo finance. Asset universe is the Dow Jones 30 stocks data.
+Training set ranges from 2017-01-01 to 2021-01-01. Trading set ranges from 2021-01-04 to 2021-11-02. The algorithm stops updated after the training period. 
 
 # Environment parameter
 Under "StockPortfolioEnv", the hmax defines maximum number of shares to trade. "initial_amount" defines start money in training. "transaction_cost_pct" defines transaction cost percentage per trade.
@@ -42,4 +43,4 @@ Under "MODEL_PARAMS" in each branch, each RL parameter can be set differently. F
 	["batch_size","buffer_size","learning_rate","total_timesteps"]
 
 # Backtesting
-We use the 60 days as lookback range for 4 years. We use Quantstats for the performance report.
+We use the 60 days as lookback range for 4 years. We use Quantstats for the performance report, which compares to the minVar portfolio of the asset universe.
