@@ -9,8 +9,6 @@ The RL algorithm in FinRL is based on openai/baselines. Those are
  - [PPO](https://github.com/openai/baselines/tree/master/baselines/ppo2)
  - [DDPG](https://github.com/openai/baselines/tree/master/baselines/ddpg)
 
-In financial world, the reinforcement learning try every steps of states and update policy depends on the choosen algorithm. 
-
 # DDPG
 Deep Deterministic Policy Gradient (DDPG) is an algorithm which concurrently learns a Q-function and a policy. It uses off-policy data and the Bellman equation to learn the Q-function, and uses the Q-function to learn the policy. The DDPG contains two major network: Actor-Critic Network. And it's a Q function $\theta^Q$, a deterministic policy function $\theta^\mu$, a target Q function $\theta^{Q^\prime}$, and a target policy function $\theta^^{\mu^\prime}$.
 
